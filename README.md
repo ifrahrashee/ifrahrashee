@@ -561,3 +561,13 @@ contract AeadPin {
         completed[msg.sender] = true;
     }
 }
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract CbcModePin {
+    mapping(address => bool) public completed;
+
+    function complete() external {
+        completed[msg.sender] = true;
+    }
+}
